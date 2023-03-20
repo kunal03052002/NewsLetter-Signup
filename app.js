@@ -23,10 +23,10 @@ app.post("/",function(req,res){
       {
         email_address: email,
         status: "subscribed",
-        // merge_fields: {
-        //   FNAME = firstName,
-        //   LNAME = lastName
-        // }
+        merge_fields: {
+          FNAME = firstName,
+          LNAME = lastName
+        }
       }
     ]
   };
@@ -65,9 +65,3 @@ app.listen(3000, function(){
   console.log("server is running on port 3000");
 });
 
-
-// API key
-// 4f37c620fdbe8945261cc5910fc8adeb-us21
-
-// List id / audience id
-// 88e4f77f03. OR  88e4f77f03
